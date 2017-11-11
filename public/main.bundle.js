@@ -1151,7 +1151,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var DownloadService = (function () {
     function DownloadService(http) {
         this.http = http;
-        this.domain = "http://localhost:8080/"; // Development Domain - Not Needed in Production
+        this.domain = ""; // "http://localhost:8080/"; // Development Domain - Not Needed in Production
     }
     // Function to create headers, add token, to be used in HTTP requests
     DownloadService.prototype.createAuthenticationHeaders = function () {
