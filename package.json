@@ -4,7 +4,8 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "cd client && ng build --aot -prod"
   },
   "author": "Conrad Kyei",
   "license": "ISC",
@@ -15,5 +16,10 @@
     "nodemailer": "^4.2.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nodemon": "^1.12.1"
+  },
+  "engines": {
+    "node": "8.5.0",
+    "npm": "5.5.1"
   }
+
 }
