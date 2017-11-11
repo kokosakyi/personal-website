@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 export class DownloadService {
 
   options;
-  domain = "http://localhost:8080/"; // Development Domain - Not Needed in Production
+  domain = ""; // "http://localhost:8080/"; // Development Domain - Not Needed in Production
 
   constructor(
     private http: Http
