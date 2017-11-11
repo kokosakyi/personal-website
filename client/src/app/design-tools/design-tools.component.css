@@ -1,0 +1,97 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.designs {
+    border-bottom: 0.5px solid #41A003;
+    padding: 1em;
+    display: flex;
+}
+
+.designs:nth-child(1) {
+    border-top: 0.5px solid #41A003;
+}
+
+.designs img {
+    padding-left: 3em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.info .title {
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    padding: 0.4em;
+}
+
+.info .title a {
+    text-decoration: none;
+}
+
+.info .description {
+    font-style: italic;
+    margin-left: 2em;
+}
+
+/* Older Phones */
+
+@media only screen and (min-width: 320px) { 
+    .designs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*  Newer Phones */
+
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Small computer screens and large tablets */
+
+@media only screen and (min-width: 768px) {
+    .designs {
+        border-bottom: 0.5px solid #41A003;
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .designs img {
+        padding-left: 3em;
+    }
+}
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {
+
+}

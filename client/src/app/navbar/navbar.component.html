@@ -1,0 +1,28 @@
+<div class="navigation">
+  <nav>
+    <div class="top-menu">
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active"><mat-icon>home</mat-icon></a></li>
+        <li><a routerLink="/resume" routerLinkActive="active">About Me</a></li>
+        <li><a routerLink="/publications" routerLinkActive="active">Publications</a></li>
+        <li><a routerLink="/design-tools" routerLinkActive="active">Design Tools</a></li>
+        <li><a routerLink="/tutorials" routerLinkActive="active">Tutorials</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>  
+</div>
+
+<mat-toolbar color="primary">
+  <span class="example-spacer"></span>
+  <button mat-button [matMenuTriggerFor]="appMenu"><mat-icon>menu</mat-icon></button>
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button (click)="goToHome()" mat-menu-item><mat-icon>home</mat-icon></button>
+  <button mat-menu-item (click)="goToAbout()">About Me</button>
+  <button mat-menu-item (click)="goToPublications()">Publications</button>
+  <button mat-menu-item (click)="goToDesignTools()">Design Tools</button>
+  <button mat-menu-item (click)="goToTutorials()">Tutorials</button>
+  <button mat-menu-item (click)="goToContact()">Contact</button>
+</mat-menu>

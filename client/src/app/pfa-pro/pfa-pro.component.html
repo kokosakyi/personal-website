@@ -1,0 +1,88 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="container">
+    <div class="info">
+      <div class="download">
+        <div class="image">
+          <img src="../../assets/img/PFA.png" />
+        </div>
+        <button mat-raised-button color="primary" (click)="downloadPFA()">Download PFA Pro</button>
+      </div>
+      <div class="content">
+        In recent times, a lot of commercial software have been developed based on the finite element method (FEM). Engineers who
+        use these applications always seem to see these programs as little ‘black boxes’ and sometimes revert to manual calculations
+        to verify their calculations. What is most interesting is that a lot more engineers use these programs without having
+        fully grasped the full concept of the finite element method, thus are unable to easily tell when the program is not
+        churning out the right results There is the need, therefore, to translate the theory of the FEM into an implementable
+        algorithm. This project was for the formulation of an algorithm for the Global System Matrices for 2-D plane frame
+        structures. This was further extended into a standalone application using Visual Basic .Net, PFA 2-D Pro for analysis
+        of stresses, member forces, reactions and other relevant parameters for the bar and truss element. The beam element,
+        a specialized frame element, as well as the general frame element is also considered.
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="info">
+      <div class="download">
+        <div class="image">
+          <img src="../../assets/img/pdf_download.jpg" />
+        </div>
+        <button mat-raised-button color="primary" (click)="downloadReport()">Download Documentation</button>
+      </div>
+      <div class="content">
+        The PFA 2-D program has been developed with very user friendly steps. Any individual conversant with how to manually analyze
+        a structure using the stiffness matrix approach will find it very easy to use. The basic steps involved in using
+        it are presented below.
+        <h3>Step One</h3>
+        User chooses which element type analysis is based on and clicks next to proceed.
+        <div class="image">
+          <img src="../../assets/img/pfa_step1.png" />
+        </div>
+        <h3>Step Two</h3>
+        User specifies the number of nodes and elements the structure is made up of
+        <div class="image">
+            <img src="../../assets/img/pfa_step2.png" />
+        </div>
+        <h3>Step Three</h3>
+        The coordinates for the nodes is specified in the global coordinate system.
+        <div class="image">
+            <img src="../../assets/img/pfa_step3.png" />
+        </div>
+        <h3>Step Four</h3>
+        User specifies the boundary conditions for the nodes and supplies support settlement or rotation values, if any
+        <div class="image">
+            <img src="../../assets/img/pfa_step4.png" />
+        </div>
+        <h3>Step Five</h3>
+        The user provides the element-node connectivity information as well as some element properties such as:
+        <ul>
+          <li>Element Cross-Sectional Area</li>
+          <li>Element Moment of Inertia</li>
+          <li>Element Modulus of Elasticity</li>
+        </ul>
+        <div class="image">
+            <img src="../../assets/img/pfa_step5.png" />
+        </div>
+        <h3>Step Six</h3>
+        If the analysis involves element loadings, they will also have to be specified. The following element 
+        loadings have been incorporated in the program:
+        <ul>
+          <li>The uniformly distributed load</li>
+          <li>The point load</li>
+          <li>Triangular loads</li>
+          <li>Trapezoidal load</li>
+        </ul>
+        With an element having a triangular load on it for instance, the user first selects the element, and specifies the element load type as triangular. 
+        Finally the orientation of the load ordinate as well as the load ordinated value is specified. This is shown in the Figure below
+        <div class="image">
+            <img src="../../assets/img/pfa_step6.png" />
+        </div>
+        The results of the analysis is then finally presented - first the formulated global stiffness matrix
+        and then other output values such as stresses, forces and reactions. The results can then be saved
+        or printed out.
+        <div class="image">
+            <img src="../../assets/img/pfa_step7.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

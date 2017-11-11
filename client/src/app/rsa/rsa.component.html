@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="container">
+    <div *ngFor="let video of videos" class="video">
+      <youtube-player [videoId]="video.id" (ready)="savePlayer($event)" (change)="onStateChange($event)"></youtube-player>
+      <div class="title">
+        {{video.title}}
+      </div>
+    </div>
+  </div>
+</div>

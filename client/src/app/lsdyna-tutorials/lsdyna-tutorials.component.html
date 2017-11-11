@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="container" (window:resize)="onResize($event)">
+    <div *ngFor="let video of videos" class="video">
+      <youtube-player [height]="170" [width]="300" [videoId]="video.id" (ready)="savePlayer($event)" (change)="onStateChange($event)" *ngIf="!isLargeScreen" ></youtube-player>
+      <youtube-player [height]="254" [width]="450" [videoId]="video.id" (ready)="savePlayer($event)" (change)="onStateChange($event)" *ngIf="isLargeScreen" ></youtube-player>
+      <div class="title">
+        {{video.title}}
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

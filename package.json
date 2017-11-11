@@ -1,0 +1,19 @@
+{
+  "name": "conradkyei",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Conrad Kyei",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "nodemailer": "^4.2.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^1.12.1"
+  }
+}

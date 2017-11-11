@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.video:nth-child(1) {
+    border-top: 1px solid #41A003;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #41A003;
+    padding: 1em;
+}
+
+.video .title {
+    margin: 3em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+

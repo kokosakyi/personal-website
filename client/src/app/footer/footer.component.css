@@ -1,0 +1,47 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Older Phones */
+
+@media only screen and (min-width: 320px) { 
+    img {
+        width: 32px;
+    }
+    footer {
+        margin-bottom: 2em;
+    }
+}
+
+/*  Newer Phones */
+
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Small computer screens and large tablets */
+
+@media only screen and (min-width: 768px) {
+    img {
+        width: 64px;
+    }     
+}
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {
+
+}

@@ -1,0 +1,151 @@
+header .name {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4em;
+  padding-top: 30px;
+}
+
+header p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+header p.email {
+  color: #265baf;
+  font-style: normal;
+}
+
+header .underline {
+  border-bottom: solid 2px #265baf;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 0;
+}
+
+header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+section.education {
+  margin-bottom: 50px;
+}
+
+section .title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+section .underline {
+  border-bottom: solid 1px #265baf;
+  width: 25%;
+  margin-bottom: 1em;
+}
+
+section.bio .profile {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile p {
+  margin: 0;
+}
+
+.education {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.experience {
+  text-align: justify;
+}
+
+
+
+.my-skills {
+  display: flex;
+}
+
+.my-skills .skills-column {
+  flex-grow: 1;
+  line-height: 200%;
+}
+
+.experience li {
+  margin-bottom: 1em;
+}
+
+.skills {
+  text-align: justify;
+}
+
+.publications {
+  text-align: justify;
+}
+
+.achievements {
+  text-align: justify;
+}
+
+
+/* Older Phones */
+
+@media only screen and (min-width: 320px) {
+  .profile-image {
+    display: none;
+  }
+}
+
+
+/*  Newer Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small computer screens and large tablets */
+
+@media only screen and (min-width: 768px) {
+  .profile-text {
+    width: 80%;
+    padding-right: 1em;
+  }
+
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 768px) {}

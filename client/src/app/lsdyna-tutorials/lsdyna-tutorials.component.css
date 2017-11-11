@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.video:nth-child(1) {
+    border-top: 1px solid #41A003;
+}
+
+.video {
+    border-bottom: 1px solid #41A003;
+    padding: 1em;
+}
+
+.video .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Older Phones */
+
+@media only screen and (min-width: 320px) { 
+    .video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+/*  Newer Phones */
+
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Small computer screens and large tablets */
+
+@media only screen and (min-width: 768px) {
+    .video {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .video .title {
+        margin-left: 1em;
+    }
+}
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Desktop monitors or large tablet devices */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+
