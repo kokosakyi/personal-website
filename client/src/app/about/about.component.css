@@ -67,7 +67,7 @@ section.bio .profile {
 
 .education {
   text-align: justify;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 .experience {
@@ -90,7 +90,7 @@ section.bio .profile {
 }
 
 .skills {
-  text-align: justify;
+  line-height: 1.5em;
 }
 
 .publications {
@@ -98,7 +98,7 @@ section.bio .profile {
 }
 
 .achievements {
-  text-align: justify;
+  line-height: 1.5em;
 }
 
 
@@ -107,6 +107,18 @@ section.bio .profile {
 @media only screen and (min-width: 320px) {
   .profile-image {
     display: none;
+  }
+
+  .experience {
+    text-align: initial;
+  }
+
+  .publications {
+    text-align: initial;
+  }
+
+  .education { 
+    text-align: initial;
   }
 }
 
