@@ -10,7 +10,7 @@ export class RsaComponent implements OnInit {
 
   player: YT.Player;
   //private id: string = '-u1wT6yILG4';
-  private videos: Video[] = [
+  videos: Video[] = [
     new Video('KhChec10vC4', '2D Frame Analysis with Robot Structural Analyis')
   ];
 
