@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+mat-card {
+    margin: 1em;
+}
+
+form {
+    line-height: 1.2em;
+}
+
+mat-radio-group {
+    display: flex;
+}
+
+mat-radio-button {
+    padding: 0.3em;
+}
+
+.results p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.results .highlight {
+    font-weight: bold;
+    color: darkblue;
+}

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { YoutubePlayerModule } from 'ng2-youtube-player';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatInputModule, MatMenuModule } from '@angular/material';
+import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatInputModule, MatMenuModule, MatRadioModule } from '@angular/material';
 import 'hammerjs';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -17,14 +17,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 import { LsdynaTutorialsComponent } from './lsdyna-tutorials/lsdyna-tutorials.component';
+import { BlastParametersComponent } from './blast-parameters/blast-parameters.component';
 import { ContactComponent } from './contact/contact.component';
 import { RsaComponent } from './rsa/rsa.component';
 
 import { ContactService } from './services/contact.service';
 import { DownloadService } from './services/download.service';
+import { BlastLoadService } from './services/blast-load.service';
 import { DesignToolsComponent } from './design-tools/design-tools.component';
 import { PfaProComponent } from './pfa-pro/pfa-pro.component';
 import { FooterComponent } from './footer/footer.component';
+import { ToggleResultsDirective } from './directives/toggle-results.directive';
 
 
 const appRoutes: Routes = [
@@ -42,6 +45,7 @@ const appRoutes: Routes = [
   {path: 'tutorials/rsa', component: RsaComponent},
   {path: 'design-tools', component: DesignToolsComponent },
   {path: 'design-tools/pfa-pro', component: PfaProComponent},
+  {path: 'design-tools/blast-parameters', component: BlastParametersComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -59,7 +63,9 @@ const appRoutes: Routes = [
     RsaComponent,
     DesignToolsComponent,
     PfaProComponent,
-    FooterComponent
+    FooterComponent,
+    BlastParametersComponent,
+    ToggleResultsDirective
   ],
   imports: [
     BrowserModule,
@@ -68,10 +74,10 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     BrowserAnimationsModule,
     YoutubePlayerModule,
-    MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatInputModule, MatMenuModule,
+    MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatInputModule, MatMenuModule, MatRadioModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [ContactService, DownloadService],
+  providers: [ContactService, DownloadService, BlastLoadService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,65 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="container">
+    <mat-card>
+      <h3>Blast Load Parameter Calculations</h3>
+    </mat-card>
+    <mat-card>
+      <form [formGroup]="form" (submit)="onSubmit()">
+        <div>
+          <label>Select blast type</label>
+          <mat-radio-group formControlName="blastType">
+            <div *ngFor="let bType of blastTypes">
+              <mat-radio-button [value]="bType" (click)="hideResults()">{{ bType }}</mat-radio-button>
+            </div>
+          </mat-radio-group>
+        </div>
+        <div>
+          <mat-form-field>
+            <input matInput placeholder="Charge Mass" id="chargeMass" name="chargeMass" formControlName="chargeMass" required>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <input matInput placeholder="Stand Off Distance" id="standOffDistance" name="standOffDistance" formControlName="standOffDistance"
+              required>
+          </mat-form-field>
+        </div>
+        <button [disabled]="!form.valid" mat-raised-button color="primary" type="submit">Compute Parameters</button>
+      </form>
+    </mat-card>
+
+    <mat-card *ngIf="displayAnswer">
+      <div class="results">
+        <p>Scaled Distance:
+          <span class="highlight">{{scaledDistance}}</span>
+        </p>
+        <p>Blast Type:
+          <span class="highlight">{{chosenBlastType}}</span>
+        </p>
+        <p>Incident Pressure (Pso):
+          <span class="highlight">{{Pso}} kPa</span>
+        </p>
+        <p>Incident Impulse (Iso):
+          <span class="highlight">{{Iso}} kPa-ms</span>
+        </p>
+        <p>Reflected Impulse (Ir):
+          <span class="highlight">{{Ir}} kPa-ms</span>
+        </p>
+        <p>Arrival Time (ta):
+          <span class="highlight">{{ta}} ms</span>
+        </p>
+        <p>Positive Phase Duration (td):
+          <span class="highlight">{{td}} ms</span>
+        </p>
+        <p>Shock Front Velocity:
+          <span class="highlight">{{vsf}} m/s</span>
+        </p>
+        <p>Peak Dynamic Pressure:
+          <span class="highlight">{{qs}} kPa</span>
+        </p>
+      </div>
+    </mat-card>
+
+  </div>
+</div>
